@@ -119,6 +119,7 @@ export const notFoundHandler = (req: Request, res: Response): Response => {
  */
 export const validateRequiredFields = (fields: string[]) => {
   return (req: Request, res: Response, next: NextFunction): Response | void => {
+    console.log('Validating fields:', req.body);
     const missingFields = fields.filter(field => req.body[field] === undefined || req.body[field] === null);
     
     if (missingFields.length > 0) {
