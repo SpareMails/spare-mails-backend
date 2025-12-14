@@ -1,12 +1,9 @@
-import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
 
-// Load environment variables
-dotenv.config();
-
 // Import configurations and utilities
+import { environment, validateEnvironment } from './configs/environment';
 import { connectDatabase } from './configs/database';
 import logger from './configs/logger';
 import { errorHandler, notFoundHandler } from './utils/responseHelpers';
@@ -21,9 +18,12 @@ import './models';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Validate environment variables
+validateEnvironment();
+
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: environment.CORS_ORIGIN,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
@@ -93,12 +93,26 @@ async function startServer() {
     
     // Start scheduler service
     schedulerService.start();
+
+    // Start SMTP server if enabled
+    if (environment.ENABLE_SMTP_SERVER) {
+      const smtpReceiver = (await import('./utils/smtpReceiver')).default;
+      await smtpReceiver.start();
+      logger.info('📧 SMTP email receiver started', {
+        port: environment.SMTP_PORT,
+        enabled: true,
+      });
+    } else {
+      logger.info('📧 SMTP email receiver disabled');
+    }
     
     // Start HTTP server
     app.listen(PORT, () => {
       logger.info(`🚀 SpareMails backend server is running on port ${PORT}`, {
-        environment: process.env.NODE_ENV || 'development',
+        environment: environment.NODE_ENV,
         port: PORT,
+        smtpEnabled: environment.ENABLE_SMTP_SERVER,
+        smtpPort: environment.SMTP_PORT,
         timestamp: new Date().toISOString(),
       });
       

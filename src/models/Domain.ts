@@ -23,14 +23,14 @@ Domain.init(
       type: DataTypes.STRING(100),
       allowNull: false,
       unique: true,
-      validate: {
-        isDomain(value: string) {
-          const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]?\.[a-zA-Z]{2,}$/;
-          if (!domainRegex.test(value)) {
-            throw new Error('Invalid domain format');
-          }
-        },
-      },
+      // validate: {
+      //   isDomain(value: string) {
+      //     const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]?\.[a-zA-Z]{2,}$/;
+      //     if (!domainRegex.test(value)) {
+      //       throw new Error('Invalid domain format');
+      //     }
+      //   },
+      // },
     },
     isActive: {
       type: DataTypes.BOOLEAN,

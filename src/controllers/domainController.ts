@@ -31,11 +31,11 @@ export const createDomain = asyncHandler(
       return sendError(res, 'Domain is required', 400);
     }
 
-    // Basic domain validation
-    const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
-    if (!domainRegex.test(domain)) {
-      return sendError(res, 'Invalid domain format', 400);
-    }
+    // // Basic domain validation
+    // const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
+    // if (!domainRegex.test(domain)) {
+    //   return sendError(res, 'Invalid domain format', 400);
+    // }
 
     try {
       const newDomain = await Domain.create({

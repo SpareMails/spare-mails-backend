@@ -42,9 +42,9 @@ TemporaryEmail.init(
       type: DataTypes.STRING(255),
       allowNull: false,
       unique: true,
-      validate: {
-        isEmail: true,
-      },
+      // validate: {
+      //   isEmail: true,
+      // },
     },
     domain: {
       type: DataTypes.STRING(100),

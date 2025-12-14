@@ -261,3 +261,296 @@
 {"ip":"::1","level":"info","message":"POST /api/temporary-emails/cleanup","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 11:16:36","userAgent":"PostmanRuntime/7.48.0"}
 {"level":"info","message":"Cleaned up 0 expired temporary emails","service":"spare-mails-backend","timestamp":"2025-10-15 11:16:36"}
 {"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:10"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:57"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:59"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:59"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:59"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:19:59"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:19:59"}
+{"ip":"::1","level":"info","message":"POST /api/webhooks/mailgun","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 11:32:01","userAgent":"PostmanRuntime/7.48.0"}
+{"from":"mdzafar.dev@gmail.com","level":"info","message":"Received email webhook","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-10-15 11:32:01","to":"satish113@sparemails.io"}
+{"emailId":"6b8df354-4a72-47ec-b5eb-d04efa09fbe7","from":"mdzafar.dev@gmail.com","level":"info","message":"Processed webhook email for: satish113@sparemails.io","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-10-15 11:32:02"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/26359e32-d770-44e5-94fc-29db74f6608c/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 11:32:20","userAgent":"PostmanRuntime/7.48.0"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/26359e32-d770-44e5-94fc-29db74f6608c/emails/6b8df354-4a72-47ec-b5eb-d04efa09fbe7","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 11:32:52","userAgent":"PostmanRuntime/7.48.0"}
+{"level":"info","message":"Marked email as read: 6b8df354-4a72-47ec-b5eb-d04efa09fbe7","service":"spare-mails-backend","timestamp":"2025-10-15 11:32:52"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:41:53"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:41:54"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:41:54"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:41:54"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:41:54"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:41:54"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:14"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:15"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:15"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:15"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:15"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:42:15"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:31"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:32"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:32"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:32"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:42:32"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:42:32"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:43:32"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:43:33"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:43:33"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:43:33"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:43:33"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:43:33"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:44:04"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:44:05"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:44:05"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:44:05"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:44:05"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:44:05"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:39"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:40"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:40"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:40"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:40"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:45:40"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:53"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:54"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:54"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:54"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:45:54"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:45:54"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:14"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:15"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:15"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:15"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:15"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:46:15"}
+{"level":"error","message":"Unable to connect to the database: Access denied for user 'root'@'localhost' (using password: NO)","name":"SequelizeAccessDeniedError","original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)","sqlState":"28000"},"parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)","sqlState":"28000"},"service":"spare-mails-backend","stack":"SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: NO)\n    at ConnectionManager.connect (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\dialects\\mysql\\connection-manager.js:118:17)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async ConnectionManager._connect (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\dialects\\abstract\\connection-manager.js:332:24)\n    at async C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\dialects\\abstract\\connection-manager.js:250:32\n    at async ConnectionManager.getConnection (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\dialects\\abstract\\connection-manager.js:280:7)\n    at async C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\sequelize.js:638:26\n    at async Sequelize.authenticate (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\sequelize.js:972:5)\n    at async connectDatabase (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\src\\configs\\database.ts:26:5)\n    at async startServer (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\src\\server.ts:89:5)","timestamp":"2025-10-15 11:46:28"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:38"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:39"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:39"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:39"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:39"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:46:39"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:47"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:48"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:48"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:48"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:46:48"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:46:48"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:47:57"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:47:58"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:47:58"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:47:58"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:47:58"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:47:58"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:02"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:03"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:03"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:03"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:03"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:48:03"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:17"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:18"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:18"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:18"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:18"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:48:18"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:26"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:27"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:27"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:27"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:27"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:48:27"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:51"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:52"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:52"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:52"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:52"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:48:52"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:57"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:58"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:58"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:58"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:48:58"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:48:58"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:15"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:15"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:15"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:16"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:16"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:49:16"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:22"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:23"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:23"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:23"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:23"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:49:23"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:30"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:31"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:31"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:31"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 11:49:31"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 11:49:31"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:00:30"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:00:31"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 12:00:31"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:00:31"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 12:00:31"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 12:00:31"}
+{"ip":"::1","level":"info","message":"POST /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:05:29","userAgent":"PostmanRuntime/7.48.0"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:06:35"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:06:36"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 12:06:36"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:06:36"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 12:06:36"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 12:06:36"}
+{"ip":"::1","level":"info","message":"POST /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:06:47","userAgent":"PostmanRuntime/7.48.0"}
+{"body":{"domain":"support"},"error":"Validation error: Invalid domain format","level":"error","message":"Error caught by global handler:","method":"POST","params":{},"query":{},"service":"spare-mails-backend","stack":"SequelizeValidationError: Validation error: Invalid domain format\n    at InstanceValidator._validate (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:78:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async InstanceValidator._validateAndRunHooks (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:111:7)\n    at async InstanceValidator.validate (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:93:12)\n    at async Domain.save (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\model.js:4077:7)\n    at async Function.create (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\model.js:2305:12)\n    at async C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\src\\controllers\\domainController.ts:41:25","timestamp":"2025-10-15 12:06:47","url":"/api/domains"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:04"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:05"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:05"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:05"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:05"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 12:08:05"}
+{"ip":"::1","level":"info","message":"POST /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:08:09","userAgent":"PostmanRuntime/7.48.0"}
+{"id":"7fa077fb-9983-49ef-a983-cb49c399c439","level":"info","message":"Created new domain: support","service":"spare-mails-backend","timestamp":"2025-10-15 12:08:09"}
+{"ip":"::1","level":"info","message":"GET /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:08:17","userAgent":"PostmanRuntime/7.48.0"}
+{"ip":"::1","level":"info","message":"POST /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:10:08","userAgent":"PostmanRuntime/7.48.0"}
+{"body":{"customName":"dev123","domain":"support","expiryMinutes":120},"error":"Validation error: Validation isEmail on email failed","level":"error","message":"Error caught by global handler:","method":"POST","params":{},"query":{},"service":"spare-mails-backend","stack":"SequelizeValidationError: Validation error: Validation isEmail on email failed\n    at InstanceValidator._validate (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:78:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async InstanceValidator._validateAndRunHooks (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:111:7)\n    at async InstanceValidator.validate (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\instance-validator.js:93:12)\n    at async TemporaryEmail.save (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\model.js:4077:7)\n    at async Function.create (C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\node_modules\\sequelize\\src\\model.js:2305:12)\n    at async C:\\Users\\moham\\OneDrive\\Desktop\\SpareMails\\backend\\src\\controllers\\temporaryEmailController.ts:71:28","timestamp":"2025-10-15 12:10:08","url":"/api/temporary-emails"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:10"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:11"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:11"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:11"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:11"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-10-15 12:11:11"}
+{"ip":"::1","level":"info","message":"POST /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:11:15","userAgent":"PostmanRuntime/7.48.0"}
+{"domain":"support","expiresAt":"2025-10-15T08:41:15.134Z","id":"776f2651-ed47-4532-9fc5-612692bd283c","level":"info","message":"Created temporary email: dev123@support","service":"spare-mails-backend","timestamp":"2025-10-15 12:11:15"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-10-15 12:11:25","userAgent":"PostmanRuntime/7.48.0"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"spare-mails-backend","timestamp":"2025-10-15 12:12:41"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 20:37:34"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 20:37:37"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 20:37:37"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 20:37:37"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 20:37:37"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 20:37:37"}
+{"level":"info","message":"Deactivated 2 expired temporary emails","service":"spare-mails-backend","timestamp":"2025-11-04 20:40:00"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:19:55"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:19:57"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:19:57"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:19:57"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:19:57"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:19:57"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:20:34"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:20:36"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:20:36"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:20:36"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:20:36"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:20:36"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:17"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:19"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:19"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:19"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:19"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:21:19"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:34"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:40"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:42"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:42"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:42"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:21:42"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:21:42"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:22:49"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:22:51"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:22:51"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:22:51"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:22:51"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:22:51"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:01"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:03"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:03"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:03"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:03"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:23:03"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:11"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:12"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:12"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:12"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:12"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:23:12"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:18"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:19"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:19"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:19"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:20"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:23:20"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:35"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:37"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:37"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:37"}
+{"level":"info","message":"📧 SMTP email receiver disabled","service":"spare-mails-backend","timestamp":"2025-11-04 23:23:37"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","smtpEnabled":false,"smtpPort":2525,"timestamp":"2025-11-04 23:23:37"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:23:37"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:30:11"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:30:12"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-11-04 23:30:12"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-11-04 23:30:12"}
+{"level":"info","message":"📧 SMTP email receiver disabled","service":"spare-mails-backend","timestamp":"2025-11-04 23:30:12"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","smtpEnabled":false,"smtpPort":2525,"timestamp":"2025-11-04 23:30:12"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-11-04 23:30:12"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"spare-mails-backend","timestamp":"2025-11-04 23:39:45"}
+{"level":"info","message":"Database connection established successfully","service":"spare-mails-backend","timestamp":"2025-12-14 11:48:49"}
+{"level":"info","message":"Database synchronized successfully","service":"spare-mails-backend","timestamp":"2025-12-14 11:48:50"}
+{"level":"info","message":"Starting scheduler service","service":"spare-mails-backend","timestamp":"2025-12-14 11:48:50"}
+{"level":"info","message":"All scheduled tasks started successfully","service":"spare-mails-backend","timestamp":"2025-12-14 11:48:50"}
+{"level":"info","message":"📧 SMTP email receiver disabled","service":"spare-mails-backend","timestamp":"2025-12-14 11:48:50"}
+{"environment":"development","level":"info","message":"🚀 SpareMails backend server is running on port 3000","port":"3000","service":"spare-mails-backend","smtpEnabled":false,"smtpPort":2525,"timestamp":"2025-12-14 11:48:50"}
+{"documentation":"Check README.md for full API documentation","domains":"/api/domains","health":"/api/health","level":"info","message":"Available endpoints:","service":"spare-mails-backend","temporaryEmails":"/api/temporary-emails","timestamp":"2025-12-14 11:48:50"}
+{"ip":"::1","level":"info","message":"GET /api/health","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:55:03","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:55:09","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/26359e32-d770-44e5-94fc-29db74f6608c/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:56:43","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/277f598f-1cf3-4605-8c50-f67cb364b324/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:57:04","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:58:21","userAgent":"PostmanRuntime/7.49.1"}
+{"domain":"support","expiresAt":"2025-12-14T06:38:21.054Z","id":"dc36d947-90e8-45f0-98fd-95c481bfb019","level":"info","message":"Created temporary email: katanaguru@support","service":"spare-mails-backend","timestamp":"2025-12-14 11:58:21"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:58:56","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:59:44","userAgent":"PostmanRuntime/7.49.1"}
+{"id":"e47d1c47-1bed-4808-9abb-759277a3206f","level":"info","message":"Created new domain: sparemails.mzdev.in","service":"spare-mails-backend","timestamp":"2025-12-14 11:59:44"}
+{"ip":"::1","level":"info","message":"GET /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:59:48","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 11:59:57","userAgent":"PostmanRuntime/7.49.1"}
+{"deletedEmails":[{"from":"mdzafar.dev@gmail.com","id":"6b8df354-4a72-47ec-b5eb-d04efa09fbe7","receivedAt":"2025-10-15T06:02:01.000Z","subject":"Welcome to SpareMails!","temporaryEmailId":"26359e32-d770-44e5-94fc-29db74f6608c"}],"level":"info","message":"Deleted 1 old received emails","olderThanDays":30,"service":"spare-mails-backend","timestamp":"2025-12-14 12:00:00"}
+{"ip":"::1","level":"info","message":"DELETE /api/temporary-emails/dc36d947-90e8-45f0-98fd-95c481bfb01","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:00:29","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:00:38","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/dc36d947-90e8-45f0-98fd-95c481bfb01","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:01:13","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:01:17","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/dc36d947-90e8-45f0-98fd-95c481bfb019","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:01:28","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"DELETE /api/temporary-emails/dc36d947-90e8-45f0-98fd-95c481bfb019","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:01:32","userAgent":"PostmanRuntime/7.49.1"}
+{"id":"dc36d947-90e8-45f0-98fd-95c481bfb019","level":"info","message":"Deactivated temporary email: katanaguru@support","service":"spare-mails-backend","timestamp":"2025-12-14 12:01:32"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:01:36","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:02:40","userAgent":"PostmanRuntime/7.49.1"}
+{"domain":"sparemails.mzdev.in","expiresAt":"2025-12-14T06:42:40.427Z","id":"47c00aaf-b60b-4087-b098-c7f1fadd06ef","level":"info","message":"Created temporary email: katanaguru@sparemails.mzdev.in","service":"spare-mails-backend","timestamp":"2025-12-14 12:02:40"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:02:44","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/webhooks/email","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:03:43","userAgent":"PostmanRuntime/7.49.1"}
+{"attachmentCount":0,"from":"mdzafar.dev@gmail.com","hasAttachments":false,"level":"info","message":"Received email webhook","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-12-14 12:03:43","to":"katanaguru@sparemails.mzdev.in"}
+{"emailId":"f290fcef-ff46-4326-a1cc-173b495d7817","from":"mdzafar.dev@gmail.com","level":"info","message":"Processed webhook email for: katanaguru@sparemails.mzdev.in","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-12-14 12:03:43"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/f290fcef-ff46-4326-a1cc-173b495d7817/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:04:41","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/47c00aaf-b60b-4087-b098-c7f1fadd06ef/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:05:12","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/47c00aaf-b60b-4087-b098-c7f1fadd06ef/emails/f290fcef-ff46-4326-a1cc-173b495d7817","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:07:26","userAgent":"PostmanRuntime/7.49.1"}
+{"level":"info","message":"Marked email as read: f290fcef-ff46-4326-a1cc-173b495d7817","service":"spare-mails-backend","timestamp":"2025-12-14 12:07:26"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/47c00aaf-b60b-4087-b098-c7f1fadd06ef/emails/stats","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:07:55","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:08:14","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"DELETE /api/domains/277f598f-1cf3-4605-8c50-f67cb364b324","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:12:46","userAgent":"PostmanRuntime/7.49.1"}
+{"id":"277f598f-1cf3-4605-8c50-f67cb364b324","level":"info","message":"Deleted domain: sparemails.io","service":"spare-mails-backend","timestamp":"2025-12-14 12:12:46"}
+{"ip":"::1","level":"info","message":"DELETE /api/domains/7fa077fb-9983-49ef-a983-cb49c399c439","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:13:00","userAgent":"PostmanRuntime/7.49.1"}
+{"id":"7fa077fb-9983-49ef-a983-cb49c399c439","level":"info","message":"Deleted domain: support","service":"spare-mails-backend","timestamp":"2025-12-14 12:13:00"}
+{"ip":"::1","level":"info","message":"GET /api/domains","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:13:03","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:13:14","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/47c00aaf-b60b-4087-b098-c7f1fadd06ef/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:13:31","userAgent":"PostmanRuntime/7.49.1"}
+{"level":"info","message":"Deactivated 1 expired temporary emails","service":"spare-mails-backend","timestamp":"2025-12-14 12:15:00"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:16:13","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/47c00aaf-b60b-4087-b098-c7f1fadd06ef/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:16:17","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:22:02","userAgent":"PostmanRuntime/7.49.1"}
+{"domain":"sparemails.mzdev.in","expiresAt":"2025-12-14T07:22:02.369Z","id":"b96391c5-7794-46f9-8f20-cc618367f204","level":"info","message":"Created temporary email: katanaguru@sparemails.mzdev.in","service":"spare-mails-backend","timestamp":"2025-12-14 12:22:02"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:22:10","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/b96391c5-7794-46f9-8f20-cc618367f204/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:23:02","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"POST /api/webhooks/email","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:23:12","userAgent":"PostmanRuntime/7.49.1"}
+{"attachmentCount":0,"from":"mdzafar.dev@gmail.com","hasAttachments":false,"level":"info","message":"Received email webhook","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-12-14 12:23:12","to":"katanaguru@sparemails.mzdev.in"}
+{"emailId":"b9854a3b-e3d9-4270-a03e-7da5ba9c4364","from":"mdzafar.dev@gmail.com","level":"info","message":"Processed webhook email for: katanaguru@sparemails.mzdev.in","service":"spare-mails-backend","subject":"Welcome to SpareMails!","timestamp":"2025-12-14 12:23:12"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/b96391c5-7794-46f9-8f20-cc618367f204/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:23:16","userAgent":"PostmanRuntime/7.49.1"}
+{"ip":"::1","level":"info","message":"GET /api/temporary-emails/b96391c5-7794-46f9-8f20-cc618367f204/emails","query":{},"service":"spare-mails-backend","timestamp":"2025-12-14 12:23:24","userAgent":"PostmanRuntime/7.49.1"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"spare-mails-backend","timestamp":"2025-12-14 12:30:17"}

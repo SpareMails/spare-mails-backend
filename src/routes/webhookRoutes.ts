@@ -1,31 +1,29 @@
 import { Router } from 'express';
+import multer from 'multer';
 import {
-  handleMailgunWebhook,
-  handleSendGridWebhook,
   handleGenericWebhook,
 } from '../utils/webhookHandlers';
 
 const router = Router();
 
-/**
- * @route   POST /api/webhooks/mailgun
- * @desc    Handle incoming emails from Mailgun
- * @access  Public (but should be secured with API keys in production)
- */
-router.post('/mailgun', handleMailgunWebhook);
-
-/**
- * @route   POST /api/webhooks/sendgrid
- * @desc    Handle incoming emails from SendGrid
- * @access  Public (but should be secured with API keys in production)
- */
-router.post('/sendgrid', handleSendGridWebhook);
+// Configure multer for email attachments
+const emailUpload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 10 * 1024 * 1024, // 10MB limit
+    files: 20, // Max 20 files per request
+  },
+  fileFilter: (req, file, cb) => {
+    // Accept all file types for emails
+    cb(null, true);
+  },
+});
 
 /**
  * @route   POST /api/webhooks/email
- * @desc    Generic webhook for testing email reception
- * @access  Public (for testing only)
+ * @desc    Generic webhook for SMTP email processing and testing
+ * @access  Public (for SMTP integration and testing)
  */
-router.post('/email', handleGenericWebhook);
+router.post('/email', emailUpload.array('attachments'), handleGenericWebhook);
 
 export default router;

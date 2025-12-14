@@ -1,13 +1,15 @@
-import { createServer } from 'smtp-server';
-import { simpleParser } from 'mailparser';
+import { SMTPServer, SMTPServerOptions } from 'smtp-server';
+import { simpleParser, ParsedMail, Attachment } from 'mailparser';
 import emailProcessingService from './emailProcessingService';
+import { processEmailAttachments } from '../configs/cloudinary';
 import logger from '../configs/logger';
+import { environment } from '../configs/environment';
 
 /**
  * SMTP Server for receiving emails
  */
 export class SMTPEmailReceiver {
-  private server: any;
+  private server!: SMTPServer;
   private port: number;
 
   constructor(port: number = 25) {
@@ -16,7 +18,7 @@ export class SMTPEmailReceiver {
   }
 
   private initializeServer() {
-    this.server = createServer({
+    const serverOptions: SMTPServerOptions = {
       // Disable authentication for temporary email service
       disabledCommands: ['AUTH'],
       
@@ -24,7 +26,7 @@ export class SMTPEmailReceiver {
       allowInsecureAuth: true,
       
       // Handle incoming connections
-      onConnect: (session, callback) => {
+      onConnect: (session: any, callback: any) => {
         logger.info('SMTP connection established', {
           remoteAddress: session.remoteAddress,
           clientHostname: session.clientHostname,
@@ -33,7 +35,7 @@ export class SMTPEmailReceiver {
       },
 
       // Handle email data
-      onData: async (stream, session, callback) => {
+      onData: async (stream: any, session: any, callback: any) => {
         try {
           // Parse the raw email
           const parsed = await simpleParser(stream);
@@ -45,13 +47,34 @@ export class SMTPEmailReceiver {
             from: parsed.from?.text,
             to: recipients,
             subject: parsed.subject,
+            attachmentCount: parsed.attachments ? parsed.attachments.length : 0,
           });
 
           // Process each recipient
           for (const recipientEmail of recipients) {
-            await emailProcessingService.processIncomingEmail({
-              rawEmail: stream.toString(),
+            // Process attachments if any
+            let processedAttachments: any[] = [];
+            if (parsed.attachments && parsed.attachments.length > 0) {
+              try {
+                // Convert mailparser attachments to multer-like format for processing
+                const multerFiles = this.convertAttachmentsToMulterFormat(parsed.attachments);
+                processedAttachments = await processEmailAttachments(multerFiles);
+                logger.info(`Processed ${processedAttachments.length} attachments for SMTP email`);
+              } catch (error) {
+                logger.error('Failed to process SMTP attachments:', error);
+                // Continue processing email even if attachments fail
+              }
+            }
+
+            // Use the webhook email processing service
+            await emailProcessingService.processWebhookEmail({
               recipientEmail,
+              fromEmail: parsed.from?.text || 'unknown@sender.com',
+              subject: parsed.subject || '(No Subject)',
+              textContent: parsed.text || '',
+              htmlContent: parsed.html || '',
+              attachments: processedAttachments,
+              receivedAt: new Date(),
             });
           }
 
@@ -61,11 +84,13 @@ export class SMTPEmailReceiver {
           callback(new Error('Failed to process email'));
         }
       },
+    };
 
-      // Handle errors
-      onError: (error) => {
-        logger.error('SMTP server error:', error);
-      },
+    this.server = new SMTPServer(serverOptions);
+    
+    // Handle server errors separately
+    this.server.on('error', (error: Error) => {
+      logger.error('SMTP server error:', error);
     });
   }
 
@@ -85,19 +110,41 @@ export class SMTPEmailReceiver {
   }
 
   /**
+   * Convert mailparser attachments to multer-like format for processing
+   */
+  private convertAttachmentsToMulterFormat(attachments: Attachment[]): Express.Multer.File[] {
+    return attachments.map((attachment, index) => ({
+      fieldname: `attachment-${index}`,
+      originalname: attachment.filename || `attachment-${index}`,
+      encoding: '7bit',
+      mimetype: attachment.contentType || 'application/octet-stream',
+      size: attachment.size || attachment.content?.length || 0,
+      buffer: attachment.content || Buffer.alloc(0),
+      destination: '',
+      filename: attachment.filename || `attachment-${index}`,
+      path: '',
+      stream: undefined as any,
+    }));
+  }
+
+  /**
    * Start the SMTP server
    */
   public start(): Promise<void> {
     return new Promise((resolve, reject) => {
-      this.server.listen(this.port, (error: any) => {
-        if (error) {
-          logger.error(`Failed to start SMTP server on port ${this.port}:`, error);
-          reject(error);
-        } else {
+      try {
+        this.server.listen(this.port, () => {
           logger.info(`🔧 SMTP server listening on port ${this.port}`);
           resolve();
-        }
-      });
+        });
+        
+        this.server.on('error', (error: Error) => {
+          logger.error(`Failed to start SMTP server on port ${this.port}:`, error);
+          reject(error);
+        });
+      } catch (error) {
+        reject(error);
+      }
     });
   }
 
@@ -118,4 +165,4 @@ export class SMTPEmailReceiver {
   }
 }
 
-export default new SMTPEmailReceiver(parseInt(process.env.SMTP_PORT || '2525'));
+export default new SMTPEmailReceiver(environment.SMTP_PORT);
