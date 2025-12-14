@@ -1,25 +1,56 @@
 import { Sequelize } from 'sequelize';
 import logger from './logger';
+import { environment } from './environment';
 
-const sequelize = new Sequelize({
-  database: process.env.DB_NAME || 'spare_mails',
-  username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT || '3306'),
-  dialect: 'mysql',
-  logging: (msg) => logger.debug(msg),
-  pool: {
-    max: 10,
-    min: 0,
-    acquire: 30000,
-    idle: 10000,
-  },
-  define: {
-    timestamps: true,
-    underscored: true,
-  },
-});
+// Supabase PostgreSQL connection with pooler support (IPv4)
+const sequelize = environment.DATABASE_URL
+  ? new Sequelize(environment.DATABASE_URL, {
+      dialect: 'postgres',
+      dialectOptions: {
+        ssl: environment.NODE_ENV === 'production' ? {
+          require: true,
+          rejectUnauthorized: false,
+        } : false,
+        // Force IPv4 for Supabase pooler compatibility
+        host: undefined,
+      },
+      logging: (msg) => logger.debug(msg),
+      pool: {
+        max: 10,
+        min: 0,
+        acquire: 30000,
+        idle: 10000,
+      },
+      define: {
+        timestamps: true,
+        underscored: true,
+      },
+    })
+  : new Sequelize({
+      database: environment.DB_NAME,
+      username: environment.DB_USER,
+      password: environment.DB_PASSWORD,
+      host: environment.DB_HOST,
+      port: parseInt(environment.DB_PORT),
+      dialect: 'postgres',
+      dialectOptions: {
+        ssl: environment.NODE_ENV === 'production' ? {
+          require: true,
+          rejectUnauthorized: false,
+        } : false,
+      },
+      logging: (msg) => logger.debug(msg),
+      pool: {
+        max: 10,
+        min: 0,
+        acquire: 30000,
+        idle: 10000,
+      },
+      define: {
+        timestamps: true,
+        underscored: true,
+      },
+    });
 
 export const connectDatabase = async (): Promise<void> => {
   try {

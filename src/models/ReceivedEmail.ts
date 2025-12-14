@@ -56,15 +56,15 @@ ReceivedEmail.init(
       allowNull: false,
     },
     textContent: {
-      type: DataTypes.TEXT('long'),
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     htmlContent: {
-      type: DataTypes.TEXT('long'),
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     attachments: {
-      type: DataTypes.JSON,
+      type: DataTypes.JSONB,
       allowNull: true,
       defaultValue: [],
     },

@@ -11,11 +11,12 @@ export const environment = {
   PORT: process.env.PORT || '3000',
   NODE_ENV: process.env.NODE_ENV || 'development',
   
-  // Database Configuration
+  // Database Configuration (Supabase PostgreSQL)
+  DATABASE_URL: process.env.DATABASE_URL || '', // Supabase connection string
   DB_HOST: process.env.DB_HOST || 'localhost',
-  DB_PORT: process.env.DB_PORT || '3306',
-  DB_NAME: process.env.DB_NAME || 'sparemail_db',
-  DB_USER: process.env.DB_USER || 'root',
+  DB_PORT: process.env.DB_PORT || '5432',
+  DB_NAME: process.env.DB_NAME || 'postgres',
+  DB_USER: process.env.DB_USER || 'postgres',
   DB_PASSWORD: process.env.DB_PASSWORD || '',
   
   // JWT Configuration
